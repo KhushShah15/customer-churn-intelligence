@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+joblib
+shap
+matplotlib
+plotly
+streamlit
+sqlalchemy
+openpyxl
+python-dotenv
+groq
