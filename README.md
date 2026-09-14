@@ -4,6 +4,52 @@ An end-to-end **Customer Churn Intelligence and Retention Analytics System** tha
 
 The system does more than simply predict whether a customer is likely to churn. It also explains **why the model considers the customer at risk** and generates **actionable personalized retention strategies**.
 
+# 🖥️ Project Screenshots
+
+## Streamlit — Customer Intelligence
+
+![Streamlit Customer Intelligence](docs/screenshots/streamlit_customer_overview.png)
+
+---
+
+## SHAP Explainability
+
+![SHAP Customer Analysis](docs/screenshots/streamlit_shap_analysis.png)
+
+---
+
+## Groq AI Personalized Retention Strategy
+
+![Groq AI Retention Strategy](docs/screenshots/streamlit_groq_strategy.png)
+
+---
+
+## Streamlit — Model Performance
+
+![Streamlit Model Performance](docs/screenshots/streamlit_model_performance.png)
+
+---
+
+# 📊 Power BI Dashboard
+
+## Executive Overview
+
+![Power BI Executive Overview](docs/screenshots/powerbi_executive_overview.png)
+
+---
+
+## Customer Risk Intelligence
+
+![Power BI Customer Intelligence](docs/screenshots/powerbi_customer_intelligence.png)
+
+---
+
+## Model Performance
+
+![Power BI Model Performance](docs/screenshots/powerbi_model_performance.png)
+
+---
+
 ---
 
 ## 📌 Project Overview
