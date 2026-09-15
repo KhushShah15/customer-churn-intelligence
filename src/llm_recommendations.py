@@ -322,27 +322,23 @@ increasing the churn prediction.
     # --------------------------------------------------------
 
     try:
+        response = client.chat.completions.create(
+            model=GROQ_MODEL,
 
-        response = (
-            client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
 
-                model=GROQ_MODEL,
+            temperature=0.3,
 
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
+            reasoning_effort="low",
 
-                temperature=0.3,
+            include_reasoning=False,
 
-                reasoning_effort="none",
-
-                reasoning_format="hidden",
-
-                max_completion_tokens=1600
-            )
+            max_completion_tokens=1600
         )
 
 
