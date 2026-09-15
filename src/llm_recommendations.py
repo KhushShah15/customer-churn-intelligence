@@ -369,25 +369,13 @@ increasing the churn prediction.
     except Exception as error:
 
         print(
-            f"\nGroq API Error: {error}"
-        )
-
-        fallback = (
-            "\n".join(
-                [
-                    f"{index}. {recommendation}"
-                    for index, recommendation
-                    in enumerate(
-                        rule_recommendations,
-                        start=1
-                    )
-                ]
-            )
+            f"\nGroq API Error: "
+            f"{type(error).__name__}: {error}"
         )
 
         return (
-            "The generative AI service is currently "
-            "unavailable.\n\n"
-            "Rule-Based Retention Recommendations:\n"
-            + fallback
+            "⚠️ AI strategy could not be generated right now.\n\n"
+            "The rule-based retention recommendations above "
+            "are still available. Please try generating the "
+            "AI strategy again in a moment."
         )
