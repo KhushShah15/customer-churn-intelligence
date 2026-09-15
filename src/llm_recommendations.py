@@ -2,7 +2,8 @@ import os
 
 from dotenv import load_dotenv
 from groq import Groq
-
+import logging
+logger = logging.getLogger(__name__)
 
 # ============================================================
 # LOAD ENVIRONMENT VARIABLES
@@ -368,14 +369,21 @@ increasing the churn prediction.
 
     except Exception as error:
 
-        print(
-            f"\nGroq API Error: "
-            f"{type(error).__name__}: {error}"
+        status_code = getattr(
+            error,
+            "status_code",
+            "UNKNOWN"
+        )
+
+        logger.exception(
+            "GROQ_GENERATION_FAILED | "
+            "error_type=%s | status_code=%s",
+            type(error).__name__,
+            status_code
         )
 
         return (
             "⚠️ AI strategy could not be generated right now.\n\n"
             "The rule-based retention recommendations above "
-            "are still available. Please try generating the "
-            "AI strategy again in a moment."
+            "are still available. Please try again in a moment."
         )
