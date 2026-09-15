@@ -4,6 +4,12 @@ An end-to-end **Customer Churn Intelligence and Retention Analytics System** tha
 
 The system does more than simply predict whether a customer is likely to churn. It also explains **why the model considers the customer at risk** and generates **actionable personalized retention strategies**.
 
+## 🌐 Live Demo
+
+🔗 **Streamlit App:** [Open Live Customer Churn Intelligence System](https://customer-churn-intelligence-meopu6r8uwjn7hr5jrnrfq.streamlit.app/)
+
+🔗 **GitHub Repository:** [View Source Code](https://github.com/KhushShah15/customer-churn-intelligence)
+
 # 🖥️ Project Screenshots
 
 ## Streamlit — Customer Intelligence
